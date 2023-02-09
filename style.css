@@ -1,0 +1,1038 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+html {
+  overflow-x: hidden;
+}
+
+/* class apara travar a pagina e nao mover para a lateral. */
+.html_hiddenX {
+  overflow-x: hidden;
+}
+
+/* class apara travar a pagina como todo */
+.html_hiddenAll {
+  overflow: hidden;
+}
+.body {
+  width: 100vw;
+  position: relative;
+}
+
+/* Class for freeze the page */
+.freeze {
+  overflow: hidden;
+}
+/* --------Class q esta inserida no rendereding to get the id----- */
+.getID {
+  background-color: orange;
+}
+.getID2 {
+  background-color: orange;
+}
+.getID3 {
+  background-color: orange;
+}
+.getID4 {
+  background-color: orange;
+}
+.getId5 {
+  display: none;
+}
+.topBar {
+  width: 100%;
+  background-color: rgb(116, 19, 19);
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 4rem;
+}
+
+.topBar .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBar .left > h3,
+.topBar .middle > h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.topBar .left > p,
+.topBar .middle > p {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topBar .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.topBar .right {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 3rem 0.7rem 3rem;
+}
+
+#nav1 .navLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav1 .navLeft > a .logo {
+  width: 100px;
+  height: 30px;
+  margin-right: 2rem;
+}
+#nav1 .navLeft .ulList {
+  display: flex;
+}
+#nav1 .navLeft .ulList li a {
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 0.7rem;
+  margin-right: 1rem;
+}
+#nav1 .navRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav1 .navRight .inputEle {
+  position: relative;
+  margin-right: 1rem;
+}
+#nav1 .navRight .inputEle .searchBox {
+  width: 15rem;
+  height: 2.2rem;
+  border: 1px solid rgb(207, 205, 205);
+}
+#nav1 .navRight .inputEle .glass1 {
+  position: absolute;
+  right: 1rem;
+  top: 0.7rem;
+  color: gray;
+}
+#nav1 .navRight .bagshopMenu {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav1 .navRight .logIn {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6rem;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+#secBanner1 {
+  background-color: rgb(211, 211, 200);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.innerBannerLeft {
+  position: relative;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.innerBannerLeft .topInnerBanner {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-weight: 600;
+  color: rgb(77, 9, 9);
+}
+
+.innerBannerLeft .middleInnerBanner {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  color: rgb(77, 9, 9);
+}
+
+.innerBannerLeft .bottomInnerBanner {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.4rem;
+}
+
+.innerBannerLeft .linethrough {
+  width: 17rem;
+  height: 0.7rem;
+  background-color: rgb(77, 9, 9);
+  position: absolute;
+  top: 52%;
+  left: 0;
+}
+
+.innerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.innerNumber {
+  font-size: 5rem;
+  font-family: Helvetica, sans-serif;
+  color: rgb(77, 9, 9);
+}
+
+.inner {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.inner .plus {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: rgb(77, 9, 9);
+}
+.innerBannerSpan {
+  position: absolute;
+  left: 0;
+  color: rgb(77, 9, 9);
+}
+.innerLeft .littlecontainer {
+  font-size: 1.7rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(77, 9, 9);
+}
+.infoBottom {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.infoBottom .pTop {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+.infoBottom .pBottom {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.06rem;
+  margin-bottom: 0.3rem;
+}
+/* ------------------------------------------Main------------------------------------- */
+main {
+  margin: 2rem;
+}
+#outterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.prodContainer {
+  margin: 0.6rem;
+  cursor: pointer;
+  width: 20rem;
+}
+
+.prodContainer .prodImg {
+  width: 20rem;
+}
+.prodContainer .prodInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.prodContainer .prodInfo {
+  margin-top: 0.4rem;
+}
+.prodContainer .prodInfo .prodName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.prodContainer .prodInfo .prodPriceClass {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}
+.prodContainer .prodInfo .prodInstallment {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+  color: rgb(73, 72, 72);
+  /* border: 2px solid olive; */
+}
+.prodContainer .prodInfoContainer .ulSizesOptions {
+  position: absolute;
+  display: none;
+  bottom: -0rem;
+  right: 0;
+}
+
+.prodContainer:hover > .prodInfoContainer .ulSizesOptions {
+  display: flex;
+}
+.prodContainer .prodInfoContainer .ulSizesOptions li {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid rgb(187, 186, 186);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#prodContainer .prodInfoContainer .ulSizesOptions li:not(:last-child) {
+  margin-right: 0.7rem;
+}
+
+#prodContainer .prodInfoContainer .ulSizesOptions li:hover {
+  border: 1.3px solid rgb(83, 82, 82);
+}
+/* -----------------------Product Page Cart--------------------------------- */
+
+#mainProdInfo {
+  position: relative;
+  display: flex;
+}
+
+#mainProdInfo .leftBoxImgs {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 0.4rem;
+}
+#mainProdInfo .leftBoxImgs .imgLeftBox {
+  width: 26rem;
+  margin: 0.3rem;
+}
+
+#mainProdInfo .rightBoxInfo {
+  margin-left: 0.5rem;
+  max-height: 80vh;
+  right: 3rem;
+}
+
+/* scrolled window I couldn't do */
+/* .reachedBottom {
+  position: absolute;
+  bottom: 15rem;
+  margin-left: 0.5rem;
+  right: 0rem;
+} */
+/* scrolled window I couldn't do */
+
+#mainProdInfo .rightBoxInfo .size_qtd {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#mainProdInfo .rightBoxInfo .prodName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: rgb(44, 43, 43);
+}
+#mainProdInfo .rightBoxInfo .prodPriceClass {
+  margin-top: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(44, 43, 43);
+}
+#mainProdInfo .rightBoxInfo .colorContainer {
+  margin-top: 1.5rem;
+}
+
+#mainProdInfo .rightBoxInfo .cor {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.4rem;
+}
+
+#mainProdInfo .rightBoxInfo .colorContainer .color {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(to left, blanchedalmond, gray);
+}
+#mainProdInfo .rightBoxInfo .ulSizesOptions2Container {
+  margin-top: 1rem;
+}
+#mainProdInfo .rightBoxInfo .ulSizesOptions2Container > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(44, 43, 43);
+  margin-bottom: 0.5rem;
+}
+#mainProdInfo .rightBoxInfo .ulSizesOptions2Container .ulSizesOptions2 {
+  display: flex;
+}
+#mainProdInfo .rightBoxInfo .ulSizesOptions2Container .ulSizesOptions2 li {
+  margin-right: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid rgb(80, 79, 79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#mainProdInfo
+  .rightBoxInfo
+  .ulSizesOptions2Container
+  .ulSizesOptions2
+  li:hover {
+  background-color: black;
+  color: white;
+}
+
+#mainProdInfo .rightBoxInfo .qtdProdContainer {
+  display: flex;
+  border: 1px solid black;
+  width: 6rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+#mainProdInfo .rightBoxInfo .qtdProdContainer .fa-minus,
+.fa-plus {
+  cursor: pointer;
+}
+#mainProdInfo .rightBoxInfo .meassuring {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  color: rgb(44, 43, 43);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+#mainProdInfo .rightBoxInfo .meassuring .provador {
+  margin-right: 1.1rem;
+}
+#mainProdInfo .rightBoxInfo .addBagContainer {
+  margin-top: 2rem;
+  display: flex;
+}
+#mainProdInfo .rightBoxInfo .addBagContainer .addBag {
+  width: 90%;
+  height: 3rem;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#mainProdInfo .rightBoxInfo .fa-bookmark {
+  border: 1px solid rgb(66, 66, 66);
+  margin-left: 1rem;
+  width: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+#mainProdInfo .rightBoxInfo .freteContainer {
+  margin-top: 2.3rem;
+}
+#mainProdInfo .rightBoxInfo .freteContainer .frete {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(73, 72, 72);
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+#mainProdInfo .rightBoxInfo .freteContainer .CEP {
+  width: 79%;
+  height: 2.5rem;
+  outline: none;
+  border: none;
+  background-color: rgb(231, 229, 229);
+}
+#mainProdInfo .rightBoxInfo .freteContainer .CEP::placeholder {
+  color: rgb(44, 44, 44);
+  padding-left: 1.5rem;
+}
+#mainProdInfo .rightBoxInfo .freteContainer .ok {
+  width: 5rem;
+  height: 2.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  margin-left: 0.6rem;
+}
+
+#mainProdInfo .rightBoxInfo .descricaoContainer {
+  margin-top: 2rem;
+}
+
+#mainProdInfo .rightBoxInfo .descricaoContainer .twoDescription {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: rgb(56, 55, 55);
+  margin-bottom: 1rem;
+}
+#mainProdInfo .rightBoxInfo .descricaoContainer .descricao {
+  margin-right: 2.5rem;
+}
+#mainProdInfo .rightBoxInfo .descricaoContainer .descricaoText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: rgb(66, 65, 65);
+}
+
+/* .sec1ProdPage {
+  width: 100%;
+  height: 100rem;
+  background-color: orange;
+} */
+
+/* --------------------Section Carrossel Product--------------------- */
+.secCarrossel {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.secCarrossel .secCarrosselTopContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.8rem 0 0.8rem 0;
+}
+
+.secCarrossel .secCarrosselTopContainer > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+.secCarrossel .secCarrosselTopContainer .carrosselMoveBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.secCarrossel .secCarrosselTopContainer .carrosselMoveBtn .fa-arrow-right,
+.carrosselMoveBtn .fa-arrow-left {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(214, 210, 210);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.secCarrossel .secCarrosselTopContainer .carrosselMoveBtn .fa-arrow-left {
+  margin-right: 1rem;
+}
+.secCarrossel .carrosselsecCarrossel {
+  width: 98%;
+  display: flex;
+  overflow-x: hidden;
+}
+.prodContainer {
+  right: 0;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* --------------------Footer--------------------- */
+footer {
+  height: 23rem;
+  background-color: black;
+  width: 100%;
+}
+.footerContainer {
+  display: flex;
+  justify-content: center;
+}
+.textNewsLetter {
+  color: white;
+}
+.containerUls {
+  display: flex;
+  height: 15rem;
+  margin-top: 3rem;
+}
+.containerUls .Ulfooter {
+  width: 10rem;
+}
+.containerUls .Ulfooter:not(:last-of-type) {
+  margin-right: 3rem;
+}
+.containerUls .Ulfooter li,
+h5 {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  left: 0;
+  color: white;
+}
+.containerUls .Ulfooter li a,
+h5 {
+  color: rgb(228, 227, 227);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.containerUls .Ulfooter h5,
+.newsLettercontainer h5 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.containerUls .Ulfooter li a {
+  font-size: 0.7rem;
+  margin-bottom: 0.45rem;
+}
+.containerUls .Ulfooter li a:hover {
+  color: rgb(185, 157, 94);
+}
+.containerUls .newsLettercontainer {
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  left: 0;
+}
+.containerUls .newsLettercontainer p {
+  color: rgb(228, 227, 227);
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerUls .inputFooter {
+  background-color: black;
+  border: 1px solid white;
+  margin-bottom: 0.3rem;
+  height: 2rem;
+  color: azure;
+}
+.containerUls .inputFooter::placeholder {
+  padding-left: 0.5rem;
+}
+
+.newsLettercontainer > button {
+  background-color: transparent;
+  color: rgb(155, 153, 153);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(155, 153, 153);
+  outline: none;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.socilMedia > i {
+  color: white;
+  font-size: 1.3rem;
+  margin: 1rem 0.5rem 0 0;
+}
+
+.containerUls .lineDividerY {
+  height: 13rem;
+  width: 0.5px;
+  background-color: rgb(197, 196, 196);
+  margin-right: 3rem;
+}
+.bottomFooter {
+  position: relative;
+  left: 0;
+}
+.bottomFooter > p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 0.2rem;
+  display: flex;
+  position: absolute;
+  left: 5rem;
+}
+/* ----------------------------shopCartSideWay----------------------- */
+/* .getID {
+  display: none;
+} */
+.shopCartSideWay {
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  right: -37%;
+  top: 0;
+  padding-right: 0.4rem;
+  width: 32rem;
+  transition: 0.4s;
+  z-index: 100;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  overflow-y: scroll;
+}
+.noProduct {
+  height: 50vh;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  margin-top: 10rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: none;
+}
+.body {
+  overflow-x: hidden;
+}
+.shopCartSideWayContainer {
+  margin: 0.2rem;
+  bottom: 0;
+  top: 0;
+}
+.overLayBase {
+  height: 100%;
+  width: 100%;
+  z-index: 90;
+}
+.overlayer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.322);
+  z-index: 99;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.containerMainPart {
+  overflow: hidden;
+}
+.shopCartSideWay .mainPart {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.shopCartSideWay .navShopCart {
+  display: flex;
+  width: 30.5rem;
+  height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  top: 0rem;
+  position: sticky;
+  padding-left: 0.5rem;
+  margin-bottom: 1.4rem;
+  background-color: white;
+  z-index: 100;
+}
+.shopCartSideWay .navShopCart .navShopCartUl {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.shopCartSideWay .navShopCart .navShopCartUl li:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopCartSideWay .navShopCart .navShopCartUl li {
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.shopCartSideWay .navShopCart .navShopCartUl li:hover {
+  border-bottom: 1px solid rgb(88, 87, 87);
+}
+
+.shopCartSideWay .navShopCart .navShopCartUl li .bagOutline {
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+}
+.shopCartSideWay .navShopCart .navShopCartUl li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6rem;
+}
+.shopCartSideWay .Xclose {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.shopCartSideWay .contaninerProdCart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+.shopCartSideWay .contaninerProdCart .prodCartLeft {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.shopCartSideWay .contaninerProdCart .prodCartLeftImg {
+  width: 90px;
+  margin-right: 1.2rem;
+}
+.shopCartSideWay .contaninerProdCart .prodCartLeftInfo .prodCartLeftInfoName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: rgb(73, 71, 71);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.shopCartSideWay .contaninerProdCart .middleInfo {
+  display: flex;
+}
+
+.shopCartSideWay .contaninerProdCart .prodCartLeftInfo .colorContainer {
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+.shopCartSideWay .contaninerProdCart .prodCartLeftInfo .cor2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(73, 71, 71);
+  margin-right: 1rem;
+}
+.shopCartSideWay .contaninerProdCart .prodCartLeftInfo .color2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(to left, blanchedalmond, gray);
+}
+.shopCartSideWay .sizecontainer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(73, 71, 71);
+  margin-right: 1.5rem;
+}
+
+.shopCartSideWay .prodCardPrice {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+.shopCartSideWay .qtdContainer {
+  border: 1px solid gray;
+  width: 4.5rem;
+  height: 1.7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.shopCartSideWay .qtdDiviser {
+  height: 1.4rem;
+  width: 1px;
+  background-color: gray;
+}
+.shopCartSideWay .qtdDiviser2 {
+  height: 1.4rem;
+  width: 1px;
+  background-color: gray;
+}
+
+.shopCartSideWay .prodCartRight {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+}
+.shopCartSideWay .prodCartRight .remove {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.6rem;
+  color: rgb(73, 71, 71);
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.shopCartSideWay .prodCartRight .saveForLater {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.shopCartSideWay .prodCartRight .saveForLater > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  color: rgb(119, 118, 118);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.shopCartSideWay .bookMark {
+  margin-left: 0.4rem;
+}
+.void {
+  height: 15rem;
+  position: fixed;
+  bottom: 0;
+}
+.payBillChekOut {
+  position: sticky;
+  width: 100%;
+  bottom: 0;
+  /* display: none; */
+  /* border: 2px solid pink; */
+
+  -webkit-box-shadow: 0px -5px 7px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px -5px 7px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -5px 7px 0px rgba(0, 0, 0, 0.24);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 0.5rem;
+  background-color: white;
+  z-index: 101;
+  overflow-x: hidden;
+}
+
+.subtotalContainer {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(83, 82, 82);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.subtotalContainer > p {
+  left: 0.5rem;
+  position: relative;
+}
+.subtotalValue,
+.totalContainer {
+  color: black;
+  right: 0.5rem;
+  position: relative;
+}
+
+.payBillChekOut .infoDescont {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+}
+
+.payBillChekOut .inputCheckeOut {
+  margin-bottom: 0.6rem;
+  height: 2rem;
+  border: none;
+  background-color: rgb(236, 234, 234);
+  width: 12rem;
+}
+
+.payBillChekOut .inputCheckeOut::placeholder {
+  color: rgb(39, 38, 38);
+  padding-left: 0.4rem;
+  font-size: 0.55rem;
+  font-weight: 600;
+}
+
+.payBillChekOut .totalContainer {
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: rgb(39, 38, 38);
+  margin-top: 0.5rem;
+  border-bottom: 1px solid rgb(228, 226, 226);
+  position: relative;
+  left: 0.5rem;
+  right: 3rem;
+}
+.subtotalinalValue {
+  position: relative;
+  left: 3rem;
+
+  position: relative;
+  left: 0.5rem;
+}
+.inputContainer {
+  width: 15rem;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  position: relative;
+  left: 0.5rem;
+}
+.inputContainer .okBox {
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(34, 33, 33);
+  color: rgb(236, 236, 236);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: none;
+}
+.inputContainer .inputCheckeOut:focus ~ .okBox {
+  display: flex;
+}
