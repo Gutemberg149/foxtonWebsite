@@ -302,13 +302,34 @@
             />
             <div class="okBox">OK</div>
           </div>
+
           <div class="inputContainer">
             <input
               type="text"
               class="cep inputCheckeOut"
+              oninput="this.value=this.value.replace(/[^0-9]/g,'')"
               placeholder="DIGITE AQUI CEP"
+              maxlength="8"
             />
-            <div class="okBox">OK</div>
+            <div class="okBox okBoxCep">OK</div>
+          </div>
+          <div class="address">
+            <h3>Address</h3>
+            <div class="addresSmallContainer">
+              <p class="addressLable">City</p>
+              <div class="city"><p></p></div>
+            </div>
+            <div class="addresSmallContainer">
+              <p class="addressLable">Street</p>
+              <div class="street"><p></p></div>
+            </div>
+            <div class="addresSmallContainer">
+              <p class="addressLable">Neighborhood</p>
+              <div class="neighborhood"><p></p></div>
+            </div>
+          </div>
+          <div class="cepErro">
+            <p>CEP ENTERED NOT FOUND</p>
           </div>
         </div>
         <div class="totalContainer">

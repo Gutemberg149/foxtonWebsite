@@ -3,6 +3,7 @@ import renderingSubBill from "./JSfolder/totalContainer.js";
 import removeItens from "./JSfolder/checkOut.js"; //remove button ,remove item from the cart
 import prodList from "../JSfolder/prodList.js";
 import { increaseProdQtt, decreaseProdQtt } from "../JSfolder/checkOut.js";
+import pesquisaCep from "./JSfolder/CEP.js";
 
 increaseProdQtt();
 decreaseProdQtt();
